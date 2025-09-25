@@ -1,0 +1,265 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Premium Saree Boutique Design System - Rich Heritage-Inspired Palette */
+
+@layer base {
+  :root {
+    /* Base Colors - Luxurious Neutrals */
+    --background: 30 15% 97%;
+    --foreground: 20 14% 15%;
+
+    /* Card & Surface Colors */
+    --card: 30 20% 98%;
+    --card-foreground: 20 14% 15%;
+
+    --popover: 30 20% 98%;
+    --popover-foreground: 20 14% 15%;
+
+    /* Brand Colors - Heritage Palette */
+    --primary: 345 65% 25%;        /* Deep Maroon */
+    --primary-foreground: 30 15% 97%;
+
+    --secondary: 45 80% 55%;       /* Rich Gold */
+    --secondary-foreground: 20 14% 15%;
+
+    --tertiary: 260 100% 35%;      /* Royal Indigo */
+    --tertiary-foreground: 30 15% 97%;
+
+    /* Accent Colors */
+    --accent: 30 25% 90%;          /* Warm Ivory */
+    --accent-foreground: 20 14% 15%;
+
+    --muted: 30 20% 92%;
+    --muted-foreground: 20 8% 45%;
+
+    /* Status Colors */
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 30 15% 97%;
+
+    /* UI Elements */
+    --border: 30 15% 85%;
+    --input: 30 15% 85%;
+    --ring: 345 65% 25%;
+
+    --radius: 0.75rem;
+
+    /* Premium Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(345 65% 25%) 0%, hsl(345 45% 35%) 50%, hsl(260 100% 35%) 100%);
+    --gradient-gold: linear-gradient(135deg, hsl(45 80% 55%) 0%, hsl(40 75% 60%) 100%);
+    --gradient-subtle: linear-gradient(180deg, hsl(30 20% 98%) 0%, hsl(30 15% 95%) 100%);
+    
+    /* Shadows - Elegant & Subtle */
+    --shadow-elegant: 0 8px 32px -8px hsl(345 65% 25% / 0.15);
+    --shadow-gold: 0 4px 20px -4px hsl(45 80% 55% / 0.25);
+    --shadow-soft: 0 2px 8px -2px hsl(20 14% 15% / 0.08);
+
+    /* Typography Scale */
+    --font-size-hero: 3.5rem;
+    --font-size-heading: 2.25rem;
+    --font-size-subheading: 1.5rem;
+    --font-size-body: 1rem;
+
+    /* Animations */
+    --transition-elegant: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-smooth: all 0.3s ease-out;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    scroll-behavior: smooth;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    line-height: 1.2;
+  }
+}
+
+@layer components {
+  /* Premium Button Variants */
+  .btn-hero {
+    @apply bg-gradient-to-r from-primary to-tertiary text-primary-foreground px-8 py-4 rounded-lg font-medium tracking-wide;
+    box-shadow: var(--shadow-elegant);
+    transition: var(--transition-elegant);
+  }
+
+  .btn-hero:hover {
+    @apply scale-105;
+    box-shadow: var(--shadow-gold);
+  }
+
+  .btn-gold {
+    @apply bg-gradient-to-r from-secondary to-yellow-400 text-secondary-foreground px-6 py-3 rounded-lg font-medium;
+    box-shadow: var(--shadow-gold);
+  }
+
+  .btn-outline-luxury {
+    @apply border-2 border-primary text-primary bg-transparent px-6 py-3 rounded-lg font-medium;
+    transition: var(--transition-smooth);
+  }
+
+  .btn-outline-luxury:hover {
+    @apply bg-primary text-primary-foreground scale-105;
+  }
+
+  /* Card Styles */
+  .card-luxury {
+    @apply bg-card border border-border rounded-xl overflow-hidden;
+    box-shadow: var(--shadow-soft);
+    transition: var(--transition-elegant);
+  }
+
+  .card-luxury:hover {
+    @apply scale-[1.02];
+    box-shadow: var(--shadow-elegant);
+  }
+
+  /* Hero Section Styles */
+  .hero-gradient {
+    background: var(--gradient-hero);
+  }
+
+  .text-hero {
+    font-size: var(--font-size-hero);
+    background: linear-gradient(135deg, hsl(30 15% 97%) 0%, hsl(45 80% 55%) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .text-luxury-gold {
+    background: var(--gradient-gold);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* Navigation Styles */
+  .nav-link {
+    @apply relative text-foreground font-medium tracking-wide;
+    transition: var(--transition-smooth);
+  }
+
+  .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background: var(--gradient-gold);
+    transition: var(--transition-smooth);
+  }
+
+  .nav-link:hover::after {
+    width: 100%;
+  }
+
+  .nav-link:hover {
+    @apply text-primary;
+  }
+
+  /* Image Overlays */
+  .image-overlay {
+    @apply relative overflow-hidden;
+  }
+
+  .image-overlay::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, hsl(345 65% 25% / 0.3) 0%, hsl(260 100% 35% / 0.2) 100%);
+    opacity: 0;
+    transition: var(--transition-smooth);
+    z-index: 1;
+  }
+
+  .image-overlay:hover::before {
+    opacity: 1;
+  }
+
+  /* Custom Scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: hsl(var(--muted));
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: hsl(var(--primary));
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: hsl(var(--secondary));
+  }
+}
