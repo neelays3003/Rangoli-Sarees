@@ -8,10 +8,10 @@ import Footer from "@/components/Footer";
 const Stores = () => {
   const store = {
     id: 1,
-    name: "Rangoli Sarees - Flagship Store",
-    address: "MG Road, Pune - 411001",
-    phone: "+91 20 4567 8900",
-    hours: "10:00 AM - 9:00 PM",
+    name: "Rangoli Sarees",
+    address: "Main Road, Shrirampur - 413709",
+    phone: "+91 9422727122",
+    hours: "10:00 AM - 8:30 PM",
     rating: 4.9,
     collections: [
       { name: "Silk Elegance", priceRange: "₹10,000 - ₹40,000", pieces: 30 },

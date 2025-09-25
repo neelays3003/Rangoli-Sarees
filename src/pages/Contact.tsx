@@ -113,8 +113,8 @@ const Contact = () => {
                       </div>
                       <div>
                         <h3 className="font-semibold text-foreground">Phone</h3>
-                        <p className="text-muted-foreground">+91 11 4567 8900</p>
-                        <p className="text-sm text-muted-foreground">Mon-Sat, 10 AM - 8 PM</p>
+                        <p className="text-muted-foreground">+91 9422727122</p>
+                        <p className="text-sm text-muted-foreground">Mon-Sun, 10 AM - 8 PM</p>
                       </div>
                     </CardContent>
                   </Card>
@@ -126,7 +126,7 @@ const Contact = () => {
                       </div>
                       <div>
                         <h3 className="font-semibold text-foreground">Email</h3>
-                        <p className="text-muted-foreground">hello@anayasarees.com</p>
+                        <p className="text-muted-foreground">rangoli2799@gmail.com</p>
                         <p className="text-sm text-muted-foreground">We'll respond within 24 hours</p>
                       </div>
                     </CardContent>
@@ -139,8 +139,7 @@ const Contact = () => {
                       </div>
                       <div>
                         <h3 className="font-semibold text-foreground">Visit Us</h3>
-                        <p className="text-muted-foreground">Khan Market, New Delhi</p>
-                        <p className="text-sm text-muted-foreground">Flagship Store & Showroom</p>
+                        <p className="text-muted-foreground">Main Road, Shrirampur</p>
                       </div>
                     </CardContent>
                   </Card>
@@ -152,8 +151,7 @@ const Contact = () => {
                       </div>
                       <div>
                         <h3 className="font-semibold text-foreground">Hours</h3>
-                        <p className="text-muted-foreground">Monday - Saturday: 10 AM - 8 PM</p>
-                        <p className="text-sm text-muted-foreground">Sunday: 11 AM - 7 PM</p>
+                        <p className="text-muted-foreground">Monday - Sunday: 10 AM - 8 PM</p>
                       </div>
                     </CardContent>
                   </Card>
@@ -199,7 +197,7 @@ const Contact = () => {
               <Card className="card-luxury p-6">
                 <CardContent>
                   <h3 className="font-semibold text-foreground mb-2">Do you ship internationally?</h3>
-                  <p className="text-muted-foreground">Yes, we ship worldwide with secure packaging and tracking.</p>
+                  <p className="text-muted-foreground">No, we do not ship worldwide.</p>
                 </CardContent>
               </Card>
 
